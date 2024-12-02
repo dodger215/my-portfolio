@@ -52,3 +52,13 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function show(){
+    document.querySelector('.dialog').classList.add('active');
+}
+
+show();
+
+document.querySelector('.close').addEventListener('click', () => {
+    document.querySelector('.dialog').classList.remove('active');
+});
